@@ -13,3 +13,7 @@ console.log(1+8+"4"); //output=94;
 /*1st command 1+8 treated as num; 
 then concats because 4 is treated as string
 */
+var firstName;
+console.log(firstName);
+firstName = 'Shie';
+console.log(firstName);
