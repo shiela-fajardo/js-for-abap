@@ -1,12 +1,31 @@
 /**
+ * unit 2.5 string & number methods
+ */
+let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+console.log(`String length is ${alphabet.length}`);
+
+let greetingStr = "Hello there friend!";
+console.log(`Friend lies at index: ${greetingStr.indexOf("friend")}`);
+
+// let num1 = 15.443256;
+// console.log(num1.toFixed(3));
+
+let num1 = 14.44;
+console.log(typeof num1); // number
+let numString = num1.toString(); // convert num1 to a string
+console.log(typeof numString); //string
+let num2 = Number(num1); // convert num1 back to a number
+console.log(typeof num2); // number
+
+/**
  * unit 2.3 scope of global & local var
  */
-var car = "BMW"; //global scope
-function showCar(){
-    console.log(car); //car is accessible bec it's global var
-}
+// var car = "BMW"; //global scope
+// function showCar(){
+//     console.log(car); //car is accessible bec it's global var
+// }
 
-showCar(); //BMW
+// showCar(); //BMW
 
 // function localScope(){
 //     var car1 = 'Toyota'; //local var
@@ -16,15 +35,15 @@ showCar(); //BMW
 // localScope(); //BMW
 // console.log(car1); //ReferenceError: car1 is not defined
 
-function blockScope(){
-    if (true){
-        var car2 = "Audi"; //old syntax in function scope
-        let car3 = "Ferrari"; //modern syntax in block scope
-    }
-    console.log(car2);//Audi
-    console.log(car3);//ReferenceError: car2 is not defined
-}
-blockScope();
+// function blockScope(){
+//     if (true){
+//         var car2 = "Audi"; //old syntax in function scope
+//         let car3 = "Ferrari"; //modern syntax in block scope
+//     }
+//     console.log(car2);//Audi
+//     console.log(car3);//ReferenceError: car2 is not defined
+// }
+// blockScope();
 
 /**
  * unit 2.2 data types
